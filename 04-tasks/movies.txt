@@ -1,0 +1,2 @@
+teste_filme_1 500 100
+Gladiador 2800 1148
