@@ -4,10 +4,12 @@ This is a repo to keep my C++ exercises I make during my Alg classes
 
 ## Useful commands
 
-- Install `g++`
+### Required packages to debug
+
+- Install `g++` and `gdb`
 
 ```bash
-sudo apt install g++
+sudo apt install g++ gdb
 ```
 
 ### Compile with g++
