@@ -3,19 +3,26 @@
 
 using namespace std;
 
-int main() {
+int main()
+{
   string dna, rna = "";
 
   cin >> dna;
 
-  for (int i = 0; i < dna.length(); i++) {
+  int i = 0;
+  while (i < dna.length())
+  {
     char d = dna[i];
 
-    if(d == 'T') {
+    if (d == 'T')
+    {
       rna += 'U';
-    } else {
+    }
+    else
+    {
       rna += d;
     }
+    i++;
   }
 
   cout << rna;
