@@ -43,12 +43,8 @@ int main()
       cout << numbers[i];
     }
   }
-  
-  cout << endl;
 
-  cout << arrSize;
-
-  cout << endl;
+  cout << endl << arrSize << endl;
 
   cout << arrSize / ARR_DEFAULT_SIZE - 1;
 
