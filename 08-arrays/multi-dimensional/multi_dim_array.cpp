@@ -22,9 +22,11 @@ int main()
 
   ler >> n;
 
-  for (int i = 0; i < 3; i++) {
-    for (int j = 0; j < 4; j++) {
-      ler >> numeros[i][j];
+  int arr[n][n];
+
+  for (int i = 0; i < n; i++) {
+    for (int j = 0; j < n; j++) {
+      ler >> arr[i][j];
     }
   }
 
