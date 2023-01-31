@@ -6,9 +6,9 @@ using namespace std;
 const int LINES = 4;
 const int COLUMNS = 4;
 
-void multiplyElementsByTen (int arr[LINES][COLUMNS]) {
-  for (int i = 0; i < LINES; i++) {
-    for (int j = 0; j < COLUMNS; j++) {
+void multiplyElementsByTen (int **arr, int lines, int columns) {
+  for (int i = 0; i < lines; i++) {
+    for (int j = 0; j < columns; j++) {
       arr[i][j] = arr[i][j] * 10;
     }
   }
@@ -27,7 +27,7 @@ int main()
     cout << endl;
   }
 
-  multiplyElementsByTen(numbers);
+  multiplyElementsByTen((int **)numbers, LINES, COLUMNS);
 
   cout << "\n\tAFTER\n";
   
