@@ -11,6 +11,8 @@ int* getIncreasedArrSize (int *arr, int &arrSize) {
   memcpy (newArr, arr, sizeof(int)*arrSize);
   arrSize += ARR_DEFAULT_SIZE;
 
+  delete[] arr;
+
   return newArr;
 }
 
