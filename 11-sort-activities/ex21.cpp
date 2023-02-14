@@ -5,7 +5,7 @@ using namespace std;
 
 struct Time
 {
-  char *nome;
+  string nome;
   int totalPontos;
   int totalVitorias;
   int saldoGols;
@@ -58,11 +58,7 @@ int main()
 
   for (int i = 0; i < qntTimes; i++)
   {
-    string nomeString;
-    cin >> nomeString;
-
-    times[i].nome = new char[nomeString.length()];
-    strcpy(times[i].nome, nomeString.c_str());
+    cin >> times[i].nome;
 
     cin >> times[i].totalPontos;
     cin >> times[i].totalVitorias;
@@ -73,21 +69,14 @@ int main()
 
   for (int i = 0; i < qntTimes; i++)
   {
-    cout << endl;
-
-    for (int c = 0; c < strlen(times[i].nome); c++)
-    {
-      cout << times[i].nome[c];
-    }
-
-    cout << " " << times[i].totalPontos << " " << times[i].totalVitorias << " " << times[i].saldoGols;
+    cout << endl << times[i].nome << " " << times[i].totalPontos << " " << times[i].totalVitorias << " " << times[i].saldoGols;
   }
 
   // desalcar memoria
-  for (int i = 0; i < qntTimes; i++)
-  {
-    delete[] times[i].nome;
-  }
+  // for (int i = 0; i < qntTimes; i++)
+  // {
+  //   delete[] times[i].nome;
+  // }
 
   return 0;
 }
